@@ -444,3 +444,346 @@ while True:
     else:
         print("Invalid choice!")
         
+# -----------------------------------
+# Question 11: Number Pattern Printer
+# Name: Tushar Kumar
+# -----------------------------------
+
+rows = int(input("Enter height: "))
+
+print("\nPattern 1")
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
+
+print("\nPattern 2")
+for i in range(1, rows + 1):
+    print((str(i) + " ") * i)
+
+print("\nPattern 3")
+for i in range(rows, 0, -1):
+    for j in range(i, 0, -1):
+        print(j, end=" ")
+    print()
+
+print("\nPattern 4")
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        print(j, end="")
+    for j in range(i - 1, 0, -1):
+        print(j, end="")
+    print()
+# -----------------------------------
+# Question 12: Multiplication Table
+# Name: Tushar Kumar
+# -----------------------------------
+
+num = int(input("Enter number: "))
+range_end = int(input("Enter range end: "))
+
+print(f"\nMultiplication Table of {num}")
+
+for i in range(1, range_end + 1):
+    print(f"{num} x {i} = {num * i}")
+# -----------------------------------
+# Question 13: Sum & Average Calculator
+# Name: Tushar Kumar
+# -----------------------------------
+
+count = int(input("How many numbers? "))
+
+numbers = []
+
+for i in range(count):
+    num = float(input(f"Enter number {i+1}: "))
+    numbers.append(num)
+
+total = sum(numbers)
+average = total / count
+maximum = max(numbers)
+minimum = min(numbers)
+
+print("\n=== RESULTS ===")
+print("Sum:", total)
+print("Average:", average)
+print("Maximum:", maximum)
+print("Minimum:", minimum)
+# -----------------------------------
+# Question 14: Factorial Calculator
+# Name: Tushar Kumar
+# -----------------------------------
+
+num = int(input("Enter a number: "))
+
+if num < 0:
+    print("Factorial not defined for negative numbers.")
+elif num == 0:
+    print("0! = 1")
+else:
+    factorial = 1
+    steps = ""
+
+    for i in range(num, 0, -1):
+        factorial *= i
+        steps += str(i) + " × " if i != 1 else "1"
+
+    print(f"{num}! = {steps} = {factorial}")
+# -----------------------------------
+# Question 15: Prime Number Checker
+# Name: Tushar Kumar
+# -----------------------------------
+
+num = int(input("Enter a number: "))
+
+if num <= 1:
+    print(f"{num} is NOT a prime number.")
+else:
+    is_prime = True
+
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            is_prime = False
+            break
+
+    if is_prime:
+        print(f"{num} is a PRIME number.")
+    else:
+        print(f"{num} is NOT a prime number.")
+
+# Range primes
+start = int(input("\nEnter start range: "))
+end = int(input("Enter end range: "))
+
+print("Prime numbers in range:")
+
+for n in range(start, end + 1):
+    if n > 1:
+        for i in range(2, int(n**0.5) + 1):
+            if n % i == 0:
+                break
+        else:
+            print(n, end=" ")
+# -----------------------------------
+# Question 16: Number Guessing Game
+# Name: Tushar Kumar
+# -----------------------------------
+
+import random
+
+while True:
+    number = random.randint(1, 100)
+    attempts = 7
+    guessed = False
+
+    print("\nGuess the number between 1 and 100")
+
+    while attempts > 0:
+        guess = int(input("Enter guess: "))
+        attempts -= 1
+
+        if guess == number:
+            print("Correct! You guessed it.")
+            guessed = True
+            break
+        elif guess > number:
+            print("Too high!")
+        else:
+            print("Too low!")
+
+        print("Attempts left:", attempts)
+
+    if not guessed:
+        print("You failed. Number was:", number)
+
+    play_again = input("Play again? (yes/no): ").lower()
+    if play_again != "yes":
+        break
+# -----------------------------------
+# Question 17: Palindrome Checker
+# Name: Tushar Kumar
+# -----------------------------------
+
+text = input("Enter word or number: ")
+
+clean_text = text.lower()
+reversed_text = clean_text[::-1]
+
+print("Original:", text)
+print("Reversed:", reversed_text)
+
+if clean_text == reversed_text:
+    print("Result: PALINDROME")
+else:
+    print("Result: NOT PALINDROME")
+# -----------------------------------
+# Question 18: Calculator Using Functions
+# Name: Tushar Kumar
+# -----------------------------------
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        return "Cannot divide by zero"
+    return a / b
+
+def modulus(a, b):
+    return a % b
+
+def power(a, b):
+    return a ** b
+
+while True:
+    print("\n1.Add 2.Subtract 3.Multiply 4.Divide 5.Modulus 6.Power 7.Exit")
+    choice = input("Enter choice: ")
+
+    if choice == '7':
+        break
+
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+
+    if choice == '1':
+        print("Result:", add(a, b))
+    elif choice == '2':
+        print("Result:", subtract(a, b))
+    elif choice == '3':
+        print("Result:", multiply(a, b))
+    elif choice == '4':
+        print("Result:", divide(a, b))
+    elif choice == '5':
+        print("Result:", modulus(a, b))
+    elif choice == '6':
+        print("Result:", power(a, b))
+    else:
+        print("Invalid choice")
+# -----------------------------------
+# Question 19: Text Analysis Functions
+# Name: Tushar Kumar
+# -----------------------------------
+
+def analyze_text(text):
+    words = text.lower().split()
+    vowels = "aeiou"
+
+    word_count = len(words)
+    vowel_count = sum(1 for char in text.lower() if char in vowels)
+    consonant_count = sum(1 for char in text.lower() if char.isalpha() and char not in vowels)
+    reversed_text = text[::-1]
+    palindrome = text.lower() == reversed_text.lower()
+    no_vowels = "".join([c for c in text if c.lower() not in vowels])
+
+    freq = {}
+    for word in words:
+        freq[word] = freq.get(word, 0) + 1
+
+    longest = max(words, key=len)
+
+    print("\n=== TEXT ANALYSIS ===")
+    print("Words:", word_count)
+    print("Vowels:", vowel_count)
+    print("Consonants:", consonant_count)
+    print("Reversed:", reversed_text)
+    print("Palindrome:", "Yes" if palindrome else "No")
+    print("Without vowels:", no_vowels)
+    print("Longest word:", longest)
+    print("Word Frequency:", freq)
+
+text = input("Enter text: ")
+analyze_text(text)
+# -----------------------------------
+# Question 20: Number System Functions
+# Name: Tushar Kumar
+# -----------------------------------
+
+import math
+
+def factorial(n):
+    return math.factorial(n)
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a + b
+    return a
+
+def sum_of_digits(n):
+    return sum(int(d) for d in str(n))
+
+def reverse_number(n):
+    return int(str(n)[::-1])
+
+def is_armstrong(n):
+    power = len(str(n))
+    return n == sum(int(d)**power for d in str(n))
+
+def gcd(a, b):
+    return math.gcd(a, b)
+
+def lcm(a, b):
+    return abs(a*b) // math.gcd(a, b)
+
+def is_perfect_number(n):
+    return n == sum(i for i in range(1, n) if n % i == 0)
+
+while True:
+    print("\n1.Factorial 2.Prime 3.Fibonacci 4.SumDigits 5.Reverse")
+    print("6.Armstrong 7.GCD 8.LCM 9.Perfect 10.Exit")
+    choice = input("Enter choice: ")
+
+    if choice == '10':
+        break
+
+    if choice == '1':
+        n = int(input("Enter number: "))
+        print("Factorial:", factorial(n))
+
+    elif choice == '2':
+        n = int(input("Enter number: "))
+        print("Prime:", is_prime(n))
+
+    elif choice == '3':
+        n = int(input("Enter n: "))
+        print("Fibonacci:", fibonacci(n))
+
+    elif choice == '4':
+        n = int(input("Enter number: "))
+        print("Sum of digits:", sum_of_digits(n))
+
+    elif choice == '5':
+        n = int(input("Enter number: "))
+        print("Reversed:", reverse_number(n))
+
+    elif choice == '6':
+        n = int(input("Enter number: "))
+        print("Armstrong:", is_armstrong(n))
+
+    elif choice == '7':
+        a = int(input("Enter a: "))
+        b = int(input("Enter b: "))
+        print("GCD:", gcd(a, b))
+
+    elif choice == '8':
+        a = int(input("Enter a: "))
+        b = int(input("Enter b: "))
+        print("LCM:", lcm(a, b))
+
+    elif choice == '9':
+        n = int(input("Enter number: "))
+        print("Perfect number:", is_perfect_number(n))
