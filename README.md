@@ -125,12 +125,46 @@ print("Reversed:", reversed_sentence)
 
 from datetime import datetime
 
-# Taking birth year input
 try:
-    birth_year = int(input("Enter your birth year: "))
+    # Taking full birth date
+    day = int(input("Enter birth day (DD): "))
+    month = int(input("Enter birth month (MM): "))
+    year = int(input("Enter birth year (YYYY): "))
+
+    # Creating birth date object
+    birth_date = datetime(year, month, day)
+
 except ValueError:
-    print("Invalid input! Please enter a valid year.")
+    print("Invalid date input!")
     exit()
+
+# Current date
+today = datetime.now()
+
+# Age calculation
+age_years = today.year - birth_date.year
+
+# Adjust if birthday not yet occurred this year
+if (today.month, today.day) < (birth_date.month, birth_date.day):
+    age_years -= 1
+
+# Time difference
+difference = today - birth_date
+
+age_days = difference.days
+age_months = age_years * 12
+age_hours = age_days * 24
+age_minutes = age_hours * 60
+years_to_100 = 100 - age_years
+
+# Display results
+print("\n=== AGE DETAILS ===")
+print(f"Current Age: {age_years} years")
+print(f"Age in Months: {age_months}")
+print(f"Age in Days: {age_days}")
+print(f"Age in Hours: {age_hours}")
+print(f"Age in Minutes: {age_minutes}")
+print(f"Years until 100: {years_to_100}")
 # -----------------------------------
 # Question 7: Temperature Converter
 # Name: Tushar Kumar
