@@ -1,10 +1,10 @@
 # Student Details
 
-name = "Shubham Kumar Jaiswal"
+name = "Tushar Kumar"
 age = 23
 course = "BE CSE (AI & ML)"
 college = "CMRIT"
-email = "shja22csaiml@cmrit.ac.in"
+email = "tuku22ece@cmrit.ac.in"
 
 print("╔════════════════════════════════════╗")
 print("║         STUDENT PROFILE            ║")
@@ -14,4 +14,5 @@ print(f"║ Age     : {age}")
 print(f"║ Course  : {course}")
 print(f"║ College : {college}")
 print(f"║ Email   : {email}")
+
 print("╚════════════════════════════════════╝")
