@@ -1,7 +1,7 @@
 ## 👨‍💻 Author
 
-**Shubham Kumar Jaiswal**  
-BE CSE (AI & ML)  
+**Tushar Singh**  
+BE ECS  
 CMR Institute of Technology 
 --- 
 # 🐍 Python Mini Projects Collection
