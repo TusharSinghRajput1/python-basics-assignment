@@ -1,357 +1,260 @@
-🐍 Python Mini Projects Collection
+# 🐍 Python Mini Projects Collection  
 
-A structured collection of beginner-to-intermediate Python programs built to strengthen core programming fundamentals, logical thinking, and problem-solving skills.
+A complete collection of beginner-to-intermediate Python programs covering core programming concepts, logical thinking, and real-world mini applications.
 
-👨‍💻 Author
+---
 
-Tushar Singh
-B.E. – Electronics & Computer Science
-CMR Institute of Technology
+## 👨‍💻 Author  
 
-📌 About This Repository
+**Tushar Singh**  
+BE – Electronics & Computer Science  
+CMR Institute of Technology  
 
-This repository contains a curated set of Python mini projects designed to:
+---
 
-Strengthen programming fundamentals
+## 📌 About This Repository  
 
-Improve logical reasoning
+This repository contains a curated set of Python mini projects built to:
 
-Practice real-world problem solving
+- Strengthen Python fundamentals  
+- Improve problem-solving skills  
+- Practice real-world logic building  
+- Prepare for technical interviews  
+- Build a strong GitHub portfolio  
 
-Prepare for technical interviews
+Each program is written with clean structure, modular design, and clear logic implementation.
 
-Build a strong GitHub portfolio
+---
 
-Each program focuses on clear logic, clean structure, and modular coding practices.
+## 📂 Project Structure  
 
-📂 Project Categories
-🔢 1. Number-Based Programs
+This repository contains the following Python programs:
 
-Programs focused on mathematical logic and number theory concepts.
+---
 
-Prime Number Checker
+### 🔢 Number Based Programs  
 
-Factorial Calculator
+- Number System Functions  
+- Prime Number Checker  
+- Factorial Calculator  
+- Fibonacci Generator  
+- Armstrong Number Checker  
+- Perfect Number Checker  
+- GCD & LCM Calculator  
+- Sum & Average Calculator  
+- Multiplication Table  
 
-Fibonacci Generator
+---
 
-Armstrong Number Checker
+### 🧠 Logic & Games  
 
-Perfect Number Checker
+- Number Guessing Game  
+- ATM Simulator  
+- Ticket Pricing System  
 
-GCD & LCM Calculator
+---
 
-Sum & Average Calculator
+### 📊 Utility Applications  
 
-Multiplication Table
+- Bill Splitter  
+- Age Calculator  
+- Temperature Converter  
+- Grade Calculator  
 
-Number System Converter
+---
 
-🧠 Core Concepts Used
+### 🔤 String & Text Processing  
 
-Loops
+- Text Analysis Functions  
+- String Manipulator  
+- Palindrome Checker  
 
-Conditional statements
+---
 
-Mathematical logic
+### 🧮 Calculator Programs  
 
-Efficient computation (e.g., Euclidean algorithm)
+- Simple Calculator  
+- Function-Based Calculator  
 
-🎮 2. Logic & Simulation Projects
+---
 
-Programs that simulate real-world systems and simple games.
+### 👤 Basic Profile Program  
 
-Number Guessing Game
+- Personal Bio Card  
 
-ATM Simulator
+---
 
-Ticket Pricing System
+# 🧠 Logic Behind Each Program  
 
-🧠 What These Demonstrate
+This section explains the core logic used in each program to demonstrate structured thinking and implementation skills.
 
-Decision-making logic
+---
 
-Menu-driven programming
+## 🔢 Number Based Programs  
 
-Input validation
+### 🔹 Number System Functions  
+Uses Python’s built-in conversion functions (`bin()`, `oct()`, `hex()`) to convert numbers between decimal, binary, octal, and hexadecimal formats.
 
-Real-world simulation
+---
 
-Use of random module
+### 🔹 Prime Number Checker  
+Checks divisibility from 2 to √n.  
+If any number divides the input completely, it is not prime.  
+Using √n improves efficiency by reducing unnecessary checks.
 
-📊 3. Utility Applications
+---
 
-Small practical tools built using Python.
+### 🔹 Factorial Calculator  
+Calculates factorial by multiplying numbers from 1 to n using loops or recursion.  
+Demonstrates understanding of iteration and mathematical growth.
 
-Bill Splitter
+---
 
-Age Calculator
+### 🔹 Fibonacci Generator  
+Starts with 0 and 1.  
+Each next number is the sum of the previous two numbers.  
+Uses loop-based updating of variables.
 
-Temperature Converter
+---
 
-Grade Calculator
+### 🔹 Armstrong Number Checker  
+Extracts digits using modulus and division operations.  
+Raises each digit to the power of total digits and compares sum with original number.
 
-🧠 Concepts Practiced
+---
 
-Formula-based calculations
+### 🔹 Perfect Number Checker  
+Finds all proper divisors of a number.  
+If the sum of divisors equals the number, it is a perfect number.
 
-datetime module usage
+---
 
-Percentage and grading systems
+### 🔹 GCD & LCM Calculator  
+Uses Euclidean Algorithm to calculate GCD.  
+LCM is calculated using:  
 
-Real-world computation logic
+LCM = (a × b) / GCD  
 
-🔤 4. String & Text Processing
+---
 
-Programs focused on string manipulation and analysis.
+### 🔹 Sum & Average Calculator  
+Stores numbers in a list.  
+Calculates total using loop or built-in sum() function.  
+Average = total sum / count of numbers.
 
-Text Analysis Tool
+---
 
-String Manipulator
+### 🔹 Multiplication Table  
+Uses a loop from 1 to 10 and multiplies each value with the given number.
 
-Palindrome Checker
+---
 
-🧠 Skills Strengthened
+## 🧠 Logic & Games  
 
-String slicing
+### 🎮 Number Guessing Game  
+Generates a random number using the `random` module.  
+User keeps guessing until correct.  
+Program provides hints like “Too High” or “Too Low”.
 
-Built-in string functions
+---
 
-Pattern checking
+### 🏦 ATM Simulator  
+Menu-driven system using a while loop.  
+Handles withdrawal, deposit, and balance checking.  
+Ensures withdrawal does not exceed available balance.
 
-Text processing logic
+---
 
-🧮 5. Calculator Programs
+### 🎟️ Ticket Pricing System  
+Calculates ticket price based on age categories and discount rules using conditional statements.
 
-Simple Calculator
+---
 
-Function-Based Calculator
+## 📊 Utility Applications  
 
-These programs demonstrate:
-
-Modular programming
-
-Function-based design
-
-Clean separation of logic
-
-👤 6. Basic Profile Program
-
-Personal Bio Card
-
-A simple structured program that formats and displays user information cleanly.
-
-🚀 Key Features
-
-✔ Menu-driven interface
-✔ Function-based modular structure
-✔ Exception handling (try-except)
-✔ Clean and readable code
-✔ Beginner-friendly implementation
-✔ Real-world simulation logic
-
-🛠️ Technologies Used
-
-Python 3
-
-math module
-
-datetime module
-
-random module
-
-▶️ How to Run
-1️⃣ Install Python
-
-Download from: https://www.python.org/downloads/
-
-2️⃣ Clone the Repository
-git clone https://github.com/your-username/your-repository-name.git
-3️⃣ Navigate to Project Folder
-cd your-repository-name
-4️⃣ Run Any Program
-python filename.py
-📚 Concepts Covered
-
-Functions
-
-Loops
-
-Conditional Statements
-
-Exception Handling
-
-String Manipulation
-
-Number Theory
-
-Menu-Driven Programming
-
-Modular Programming
-
-Real-World Logic Implementation
-
-🎯 Why This Project Matters
-
-This repository reflects:
-
-Strong foundation in Python
-
-Logical problem-solving ability
-
-Structured coding approach
-
-Ability to build real-world mini applications
-
-It serves as a stepping stone toward advanced projects in:
-
-Data Science
-
-AI/ML
-
-Backend Development
-
-Automation
-
-🧠 Logic Behind Each Program
-
-This section briefly explains the core logic used in each program to demonstrate problem-solving approach and understanding.
-
-🔢 Number Based Programs
-🔹 Number System Functions
-
-Uses Python’s built-in conversion functions (bin(), oct(), hex()) to convert numbers between different number systems. Helps understand how decimal numbers are represented internally in other formats.
-
-🔹 Prime Number Checker
-
-Checks divisibility from 2 to √n.
-If any number divides it completely → it is not prime.
-Using √n reduces unnecessary checks and improves efficiency.
-
-🔹 Factorial Calculator
-
-Multiplies numbers from 1 to n using a loop (or recursion).
-Demonstrates iterative thinking and understanding of mathematical growth.
-
-🔹 Fibonacci Generator
-
-Starts with 0 and 1.
-Each next number = sum of previous two numbers.
-Uses loop and variable updates to generate sequence dynamically.
-
-🔹 Armstrong Number Checker
-
-Extracts each digit using modulus and division.
-Raises each digit to the power of total digits and sums them.
-If sum equals original number → Armstrong number.
-
-🔹 Perfect Number Checker
-
-Finds all proper divisors (excluding the number itself).
-If their sum equals the number → Perfect number.
-
-🔹 GCD & LCM Calculator
-
-Uses Euclidean Algorithm for GCD (repeated remainder method).
-LCM calculated using formula:
-LCM = (a × b) / GCD
-
-🔹 Sum & Average Calculator
-
-Stores numbers in a list.
-Calculates sum using loop or built-in function.
-Average = total sum ÷ number of elements.
-
-🔹 Multiplication Table
-
-Uses a loop from 1 to 10.
-Multiplies user input number with loop variable.
-
-🧠 Logic & Games
-🎮 Number Guessing Game
-
-Generates random number using random module.
-User guesses until correct.
-Program gives hints like “Too High” or “Too Low”.
-Demonstrates loops and conditional flow control.
-
-🏦 ATM Simulator
-
-Menu-driven system using while loop.
-Options handled using conditional statements.
-Ensures withdrawal does not exceed balance.
-Simulates basic banking logic.
-
-🎟️ Ticket Pricing System
-
-Uses conditional branching to calculate ticket cost based on age and discount rules.
-Demonstrates real-world decision-making logic.
-
-📊 Utility Applications
-💰 Bill Splitter
-
-Divides total bill amount by number of people.
+### 💰 Bill Splitter  
+Divides total bill amount among number of people.  
 Optionally adds tip percentage before splitting.
 
-🎂 Age Calculator
+---
 
-Uses datetime module to calculate difference between current date and birth date.
-Converts difference into years, months, or days.
+### 🎂 Age Calculator  
+Uses `datetime` module to calculate difference between current date and birth date.  
+Displays age in years or total days.
 
-🌡️ Temperature Converter
+---
 
-Applies mathematical formulas for conversion between Celsius, Fahrenheit, and Kelvin.
-Uses conditional statements for selected conversion type.
+### 🌡️ Temperature Converter  
+Applies formula-based conversions between Celsius, Fahrenheit, and Kelvin using conditional logic.
 
-🏆 Grade Calculator
+---
 
-Calculates percentage from total marks.
-Assigns grade based on predefined ranges using if-elif conditions.
+### 🏆 Grade Calculator  
+Calculates percentage from marks.  
+Assigns grades based on predefined ranges using if-elif conditions.
 
-🔤 String & Text Processing
-📖 Text Analysis Functions
+---
 
-Counts words, characters, vowels, and case types using loops and string methods.
-Demonstrates string traversal and pattern checking.
+## 🔤 String & Text Processing  
 
-✂ String Manipulator
+### 📖 Text Analysis Functions  
+Counts words, characters, vowels, uppercase and lowercase letters using loops and string methods.
 
-Performs operations like reversing, changing case, replacing words, and trimming spaces using built-in string methods.
+---
 
-🔁 Palindrome Checker
+### ✂ String Manipulator  
+Performs operations such as reversing string, changing case, replacing words, and trimming spaces using built-in string functions.
 
-Reverses string using slicing (text[::-1]).
-Compares original and reversed string to determine palindrome.
+---
 
-🧮 Calculator Programs
-➕ Simple Calculator
+### 🔁 Palindrome Checker  
+Reverses string using slicing (`text[::-1]`) and compares it with original string to check palindrome.
 
-Performs arithmetic operations using conditional statements.
+---
 
-🧠 Function-Based Calculator
+## 🧮 Calculator Programs  
 
-Each arithmetic operation written as separate function.
-Demonstrates modular programming and code reusability.
+### ➕ Simple Calculator  
+Performs addition, subtraction, multiplication, and division using conditional branching.
 
-👤 Personal Bio Card
+---
 
-Takes user input and formats it using string formatting.
-Focuses on structured output presentation.
+### 🧠 Function-Based Calculator  
+Each arithmetic operation is implemented as a separate function to demonstrate modular programming and reusability.
 
-🔮 Future Enhancements
+---
 
-Convert projects into GUI applications (Tkinter)
+## 👤 Personal Bio Card  
 
-Refactor into Object-Oriented Programming (OOP)
+Takes user input and formats it using structured string formatting for clean output presentation.
 
-Add Unit Testing
+---
 
-Create Web Versions using Flask
+# 🚀 Features  
 
-Add Time & Space Complexity analysis
+- Menu-driven programs  
+- Function-based modular coding  
+- Error handling using try-except  
+- Clean and readable structure  
+- Beginner-friendly logic  
+- Real-world mini simulations  
 
-Deploy interactive versions
+---
 
-⭐ Support
+# 🛠️ Technologies Used  
 
-If you found this repository helpful, consider giving it a ⭐ on GitHub!
+- Python 3  
+- math module  
+- datetime module  
+- random module  
+
+---
+
+# ▶️ How to Run  
+
+1. Install Python (if not installed)
+
+2. Clone this repository:
+
+```bash
+git clone https://github.com/your-username/your-repository-name.git
